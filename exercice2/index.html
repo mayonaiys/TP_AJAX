@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>AJAX-JSON</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous">
+
+    <!-- JS Scripts -->
+    <script src="js/ajax.js" defer></script>
+    <script src="js/clock.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="container">
+      <br>
+      <h1>AJAX-JSON</h1>
+      <hr>
+    </header>
+
+    <!-- Errors -->
+    <section id="errors" class="container alert alert-danger" style="display: none">
+    </section>
+    
+    <!-- Clock -->
+    <section class="container col-md-4 offset-md-4">
+      <h4 id='title'></h4>
+      <p id='detail'></p>
+      <br>
+      <canvas id="clock" width="400" height="400" style="background-color:#333"></canvas>
+    </section>
+  </body>
+</html>

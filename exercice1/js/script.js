@@ -47,12 +47,12 @@ function display(response){
 }
 
 function displayError(response){
-    document.getElementById('errors').style.display = "";
     document.getElementById('errors').innerHTML = "<i class='material-icons'>error</i>"+"<strong>"+response+"</strong>";
+    document.getElementById('errors').style.display = null;
 }
 
 let time = setInterval(timer, 1000);
 
 function timer() {
-  setInterval(ajaxRequest("GET","http://localhost/ComWeb/TP_AJAX/php/timestamp.php",display),1000);
+  ajaxRequest("GET","http://localhost/ComWeb/TP_AJAX/exercice1/php/timestamp.php",display);
 } 
